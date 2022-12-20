@@ -11,6 +11,7 @@ export default function App() {
       clientY: e.clientY,
     };
     setList([...list, newCircle]);
+    setUndid([]);
   };
 
   const handleContainerButton = (event: any) => {
