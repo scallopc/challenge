@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  background-color: #f6f6f6;
+  height: 100vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #197129;
+  display: block;
+  position: absolute;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-button {
+  position: absolute;
+  padding: 10px;
+  top: 200px;
+  left: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-undo:hover {
+  background: linear-gradient(to bottom, #77b842 5%, #a3db72 100%);
+  background-color: #77b842;
+}
+
+.btn-undo {
+  box-shadow: inset 0px 1px 0px 0px #a1c77f;
+  background: linear-gradient(to bottom, #a3db72 5%, #77b842 100%);
+  background-color: #a3db72;
+  border-color: #2d8c1c;
+  text-shadow: 0px 1px 0px #aade7c;
+  color: #3a5227;
+  margin-right: 10px;
+}
+
+.btn-redo {
+  background-color: #44c767;
+  border-color: #18ab29;
+  text-shadow: 0px 1px 0px #2f6627;
+  color: #ffffff;
+}
+
+.btn-redo:hover {
+  background-color: #5cbf2a;
 }
